@@ -2,11 +2,11 @@
 #ifndef _CONSTANTS_H_
 #define _CONSTANTS_H_
 
-class Constants
+namespace Constant
 {
-public:
-	Constants();
-	~Constants();
-};
-
+	namespace Tiles
+	{
+		char charTileDefault = '-';
+	}
+}
 #endif
