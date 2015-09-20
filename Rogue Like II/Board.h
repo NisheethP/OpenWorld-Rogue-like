@@ -14,10 +14,16 @@ class Board
 	int width;
 	int height;
 
+	/*THIS IS THE ACTIVE STATE OF THE BOARD - SHOWING THE ENTIITES ON IT AS WELL*/
 	tileVector2d board;
+	/*THE BASE MAP ON WHICH ONLY THE LOCATIONS ARE SHOWN AND NOT ENTITIES*/
+	tileVector2d map;
+
+	void GenerateMap();
 public:
 	Board();
 	void DrawBoard();
+	void DrawMap();
 	~Board();
 };
 

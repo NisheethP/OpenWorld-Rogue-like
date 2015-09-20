@@ -1,10 +1,19 @@
 #pragma once
 #ifndef _ENTITY_H_
 #define _ENTITY_H_
-class Entity
+#include "Tile.h"
+
+enum EntityType
 {
+	DefaultEntity,
+	PlayerEntity
+};
+class Entity : public Tile
+{
+protected:
+	EntityType entityType;
 public:
-	Entity();
+	Entity(EntityType type = DefaultEntity);
 	~Entity();
 };
 

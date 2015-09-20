@@ -7,8 +7,9 @@ Tile::Tile(TileType type)
 	{
 	case tileDefault:
 	default:
-		tile.first = tileDefault;
-		tile.second = Constant::Tiles::charTileDefault;
+		tileType = tileDefault;
+		tileSymbol = Constant::Tiles::charTileDefault;
+		tileColour = Helper::Colour::Gray;
 	}
 	
 }
@@ -20,5 +21,5 @@ Tile::~Tile()
 
 char Tile::getTileSymbol()
 {
-	return tile.second;
+	return tileSymbol;
 }

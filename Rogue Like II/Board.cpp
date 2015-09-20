@@ -29,16 +29,31 @@ Board::~Board()
 
 void Board::DrawBoard()
 {
-	for (int i = 0; i < height; i++)
+	for (int i = 0; i < board.size(); i++)
 	{
-		for (int j = 0; j < width; j++)
+		for (int j = 0; j < board[i].size(); j++)
 		{
 			std::cout << board[i][j]->getTileSymbol();
 			std::cout << ' ';
 		}		
 		std::cout << '\n';
 	}
-	
-	
+}
+
+void Board::DrawMap()
+{
+	for (int i = 0; i < board.size(); i++)
+	{
+		for (int j = 0; j < board[i].size(); j++)
+		{
+			std::cout << map[i][j]->getTileSymbol();
+			std::cout << ' ';
+		}
+		std::cout << '\n';
+	}
+}
+
+void Board::GenerateMap()
+{
 
 }
