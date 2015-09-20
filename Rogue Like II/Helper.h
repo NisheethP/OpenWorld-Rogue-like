@@ -177,6 +177,8 @@ namespace Helper
 	KeyInput getArrowInput();
 	bool Str_To_KeyPress(KeyPress& key, std::string chr);
 	bool keyPress_To_Str(KeyPress key, std::string& chr);
+	
+	void SetDefaultColour(Colour pcolour);
 }
 
 #endif

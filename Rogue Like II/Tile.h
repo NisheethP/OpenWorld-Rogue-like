@@ -21,6 +21,7 @@ protected:
 	Helper::Colour tileColour;
 public:
 	Tile(TileType type = tileDefault);
+	Helper::Colour getTileColour();
 	char getTileSymbol();
 	~Tile();
 };

@@ -13,7 +13,7 @@ class Entity : public Tile
 protected:
 	EntityType entityType;
 public:
-	Entity(EntityType type = DefaultEntity);
+	Entity(EntityType type = PlayerEntity);
 	~Entity();
 };
 

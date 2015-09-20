@@ -5,12 +5,11 @@ Entity::Entity(EntityType type)
 {
 	switch (type)
 	{
-	case DefaultEntity:
-		tileColour = Helper::Colour::Gray;
-		break;
 	case PlayerEntity:
 		tileColour = Helper::Colour::Cyan;
+		tileSymbol = 'H';
 		break;
+	case DefaultEntity:
 	default:
 		type = DefaultEntity;
 		tileColour = Helper::Colour::Gray;
